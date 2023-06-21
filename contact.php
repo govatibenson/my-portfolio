@@ -9,28 +9,9 @@
 			font-size: 20px;
 		}
 	</style>
-	<h2 text align="center"><a href="index.html">HOME</a></h2>
+	<h2 text align="center"><a href="index.php">HOME</a></h2>
 </head>
 <body>
-	<?php
-$servernane="localhost";
-$username="root";
-$password="";
-$database="contact_details";
-
-$conn=myqli_connect($servername,$username,$password,$database);
-if($conn){
-echo "connected";
-}
-else{
-echo "not connected";
-}
-$query=mysqli_query($conn,"select*from contact_details");
-
-while($row=mysqli_fetch_array(query)){
-echo $row["id"]."\t".$row["firstname"]."\t".$row["nationality"]."\t".$row["phone"]."\t".$row["email"]."<br>";
-}
-?>
 	<!--- geolocation code starts from here--->
 	<script type="text/javascript">
 		if (navigator.geolocation) {

@@ -14,28 +14,9 @@
 			text-align: center;
 		}
 	</style>
-	<h2></HEAD><a href="index.html">HOME</a></h2>
+	<h2><a href="index.php">HOME</a></h2>
 	</head>
 	<body>
-<?php
-$servernane="localhost";
-$username="root";
-$password="";
-$database="projects";
-
-$conn=myqli_connect($servername,$username,$password,$database);
-if($conn){
-echo "connected";
-}
-else{
-echo "not connected";
-}
-$query=mysqli_query($conn,"select*from projects");
-
-while($row=mysqli_fetch_array(query)){
-echo $row["id"]."\t".$row["projects"]."<br>";
-}
-?>
 	<h4>PROJECTS</h4>
 		<p5>So far I am done with two projects, the first one I used purely HTML, and the other one I combined HTML and CSS. Currently am working on another project where am combining three skills HTML, HTML and JavaCsript. You can appreciate what i did by clicking on the Icons that will take to the project. </p5>
 			
